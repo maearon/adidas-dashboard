@@ -3,10 +3,19 @@ import './globals.css';
 
 import { SidebarProvider } from '@/context/SidebarContext';
 import { ThemeProvider } from '@/context/ThemeContext';
+import { Metadata } from 'next';
 
 const outfit = Outfit({
   subsets: ["latin"],
 });
+
+export const metadata: Metadata = {
+  title: {
+    template: "adidas Dashboard %s | adidas US",
+    default: "adidas Admin Dashboard | adidas US",
+  },
+  description: "Admin Dashboard Managment for Shop the latest adidas shoes, clothing and accessories",
+}
 
 export default function RootLayout({
   children,
