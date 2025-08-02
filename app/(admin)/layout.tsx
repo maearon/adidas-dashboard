@@ -1,16 +1,29 @@
 "use client";
 
+import FullScreenLoader from "@/components/FullScreenLoader";
 import { useSidebar } from "@/context/SidebarContext";
 import AppHeader from "@/layout/AppHeader";
 import AppSidebar from "@/layout/AppSidebar";
 import Backdrop from "@/layout/Backdrop";
+import { selectUser } from "@/store/sessionSlice";
+import { redirect } from "next/navigation";
 import React from "react";
+import { useSelector } from "react-redux";
 
 export default function AdminLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
+  const { value: user, status } = useSelector(selectUser)
+
+  const userLoading = status === "loading"
+
+  if (!user) redirect("/signin");
+
+  if (userLoading) {
+    <FullScreenLoader />
+  }
   const { isExpanded, isHovered, isMobileOpen } = useSidebar();
 
   // Dynamic class for main content margin based on sidebar state

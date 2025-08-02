@@ -11,7 +11,7 @@ export async function generateMetadata(): Promise<Metadata> {
   // other metadata
 };
 }
-export default function page() {
+export default function CalendarPage() {
   return (
     <div>
       <PageBreadcrumb pageTitle="Calendar" />
