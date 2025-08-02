@@ -7,11 +7,17 @@ import StatisticsChart from "@/components/ecommerce/StatisticsChart";
 import RecentOrders from "@/components/ecommerce/RecentOrders";
 import DemographicCard from "@/components/ecommerce/DemographicCard";
 
-export const metadata: Metadata = {
+export async function generateMetadata({
+  params,
+}: {
+  params: { slug?: string };
+}): Promise<Metadata> {
+  return {
   title:
     "Next.js E-commerce Dashboard | TailAdmin - Next.js Dashboard Template",
   description: "This is Next.js Home for TailAdmin Dashboard Template",
 };
+}
 
 export default function Ecommerce() {
   return (

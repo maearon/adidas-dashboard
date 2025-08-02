@@ -4,12 +4,18 @@ import Alert from "@/components/ui/alert/Alert";
 import { Metadata } from "next";
 import React from "react";
 
-export const metadata: Metadata = {
+export async function generateMetadata({
+  params,
+}: {
+  params: { slug?: string };
+}): Promise<Metadata> {
+  return {
   title: "Next.js Alerts | TailAdmin - Next.js Dashboard Template",
   description:
     "This is Next.js Alerts page for TailAdmin - Next.js Tailwind CSS Admin Dashboard Template",
   // other metadata
 };
+}
 
 export default function Alerts() {
   return (
