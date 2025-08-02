@@ -12,7 +12,7 @@ export async function generateMetadata(): Promise<Metadata> {
 };
 }
 
-export default function page() {
+export default function BarChart() {
   return (
     <div>
       <PageBreadcrumb pageTitle="Bar Chart" />
