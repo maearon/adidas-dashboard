@@ -3,11 +3,7 @@ import PageBreadcrumb from "@/components/common/PageBreadCrumb";
 import { Metadata } from "next";
 import React from "react";
 
-export async function generateMetadata({
-  
-}: {
-  
-}): Promise<Metadata> {
+export async function generateMetadata(): Promise<Metadata> {
   return {
   title: "Next.js Calender | TailAdmin - Next.js Dashboard Template",
   description:

@@ -12,11 +12,7 @@ import ToggleSwitch from "@/components/form/form-elements/ToggleSwitch";
 import { Metadata } from "next";
 import React from "react";
 
-export async function generateMetadata({
-  
-}: {
-  
-}): Promise<Metadata> {
+export async function generateMetadata(): Promise<Metadata> {
   return {
   title: "Next.js Form Elements | TailAdmin - Next.js Dashboard Template",
   description:

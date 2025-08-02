@@ -4,11 +4,7 @@ import BasicTableOne from "@/components/tables/BasicTableOne";
 import { Metadata } from "next";
 import React from "react";
 
-export async function generateMetadata({
-  
-}: {
-  
-}): Promise<Metadata> {
+export async function generateMetadata(): Promise<Metadata> {
   return {
   title: "Next.js Basic Table | TailAdmin - Next.js Dashboard Template",
   description:

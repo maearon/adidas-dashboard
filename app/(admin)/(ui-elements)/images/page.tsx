@@ -6,11 +6,7 @@ import TwoColumnImageGrid from "@/components/ui/images/TwoColumnImageGrid";
 import { Metadata } from "next";
 import React from "react";
 
-export async function generateMetadata({
-  params,
-}: {
-  params: { slug?: string };
-}): Promise<Metadata> {
+export async function generateMetadata(): Promise<Metadata> {
   return {
   title: "Next.js Images | TailAdmin - Next.js Dashboard Template",
   description:
