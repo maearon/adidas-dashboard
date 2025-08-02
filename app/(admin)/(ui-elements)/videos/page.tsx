@@ -4,9 +4,9 @@ import { Metadata } from "next";
 import React from "react";
 
 export async function generateMetadata({
-  params,
+  
 }: {
-  params: { slug?: string };
+  
 }): Promise<Metadata> {
   return {
   title: "Next.js Videos | TailAdmin - Next.js Dashboard Template",

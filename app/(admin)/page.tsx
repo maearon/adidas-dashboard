@@ -8,9 +8,9 @@ import RecentOrders from "@/components/ecommerce/RecentOrders";
 import DemographicCard from "@/components/ecommerce/DemographicCard";
 
 export async function generateMetadata({
-  params,
+  
 }: {
-  params: { slug?: string };
+  
 }): Promise<Metadata> {
   return {
   title:

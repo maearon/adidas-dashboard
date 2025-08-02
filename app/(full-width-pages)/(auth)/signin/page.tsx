@@ -2,9 +2,9 @@ import SignInForm from "@/components/auth/SignInForm";
 import { Metadata } from "next";
 
 export async function generateMetadata({
-  params,
+  
 }: {
-  params: { slug?: string };
+  
 }): Promise<Metadata> {
   return {
   title: "Next.js SignIn Page | TailAdmin - Next.js Dashboard Template",
