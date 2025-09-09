@@ -34,3 +34,32 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+Learn how to **implement Better-Auth with Next.js 15 and Prisma Postgres** in this YouTube tutorial: https://www.youtube.com/watch?v=w5Emwt3nuV0
+
+Including:
+
+- Auth client & database setup
+- Email & password login
+- Transactional emails with Resend
+- OAuth (Google & GitHub)
+- Admin role & authorization
+- Hooks and custom password validation with Zod
+- Updating user profile data
+- SSR and caching
+- Deployment to Vercel
+- and more
+
+<img width="1920" height="1080" alt="Thumb 1 1" src="https://github.com/user-attachments/assets/439a0b95-1927-4d98-a0be-1c36aa0b91f4" />
+
+# https://tweakcn.com/#examples
+# https://console.neon.tech/app/projects/proud-sun-03600537/branches/br-proud-sun-a4dsawej/tables?database=adidas_auth_prod
+# https://www.prisma.io/docs/guides/betterauth-nextjs
+# https://console.prisma.io/cmfahqbk6002qymfi6xle0ooz/cmfaus36y0018zuh1i0b614yq/cmfaus36y0019zuh124p6oix4/studio
+
+```
+npx prisma init --db --output ../src/generated/prisma
+npx @better-auth/cli@latest secret
+npx @better-auth/cli generate
+npx prisma db push
+```
